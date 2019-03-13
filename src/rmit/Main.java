@@ -15,10 +15,7 @@ import rmit.Proxy.Banner;
 import rmit.Proxy.ProxyBanner;
 import rmit.Singleton.MyTask;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -92,19 +89,23 @@ public class Main {
                     {
                         System.out.println("Please enter the id of enrollment that you want to update");
                         String idEnrollment = String.valueOf(scanner.nextInt());
-                        StudentEnrollment studentEnrollment1 = studentEnrollmentArrayList
+                        Optional<StudentEnrollment> studentEnrollment1 = studentEnrollmentArrayList
                                 .stream()
                                 .filter(e -> e.getIdErollment().equals(idEnrollment))
-                                .findFirst().get();
+                                .findFirst();
+                        if(!studentEnrollment1.isPresent()){
+                            System.out.println("Invalid Input. Please try again");
+                            break;
+                        }
                         System.out.println("Please enter the id of student that you want to enroll: ");
                         String idStudent1 = String.valueOf(scanner.nextInt());
                         System.out.println("Please enter the id of Course that you want to enroll: ");
                         String idCourse1 = String.valueOf(scanner.nextInt());
-                        studentEnrollment1.getmStudentList().add(arrayListStudent.stream()
+                        studentEnrollment1.get().getmStudentList().add(arrayListStudent.stream()
                                 .filter(e -> e.getSid().equals(idStudent1))
                                 .findFirst().get()
                         );
-                        studentEnrollment1.getmCourseList().add(courseArrayList.stream()
+                        studentEnrollment1.get().getmCourseList().add(courseArrayList.stream()
                                 .filter(e -> e.getcid().equals(idCourse1))
                                 .findFirst().get()
                         );
@@ -117,16 +118,19 @@ public class Main {
                     case 3:
                         System.out.println("Please enter the id of enrollment that you want to delete");
                         String idEnrollment = String.valueOf(scanner.nextInt());
-                        StudentEnrollment studentEnrollment1 = studentEnrollmentArrayList
+                        Optional<StudentEnrollment> studentEnrollment1 = studentEnrollmentArrayList
                                 .stream()
                                 .filter(e -> e.getIdErollment().equals(idEnrollment))
-                                .findFirst().get();
-                        studentEnrollmentArrayList.remove(studentEnrollment1);
+                                .findFirst();
+                        if(!studentEnrollment1.isPresent()){
+                            System.out.println("Invalid Input. Please try again");
+                            break;
+                        }
+                        studentEnrollmentArrayList.remove(studentEnrollment1.get());
                         System.out.println("Done !");
 
                         break;
                     case 4:
-
                         if (studentEnrollmentArrayList.size() > 1 || studentEnrollmentArrayList.size() == 1) {
                             System.out.println("The List Of Enrollment");
                             studentEnrollmentArrayList.stream().forEach(e -> {
