@@ -11,9 +11,7 @@ public class EnrollmentDetailsBySemester implements EnrollmentDetails {
     String id;
 
 
-    public void settingDisplayStudent( EnrollmentDetails mEnrollmentDetails) {
-        mEnrollmentDetails.printfl(id);
-    }
+
     public EnrollmentDetailsBySemester(ArrayList<StudentEnrollment> studentEnrollments,String id) {
         this.studentEnrollments = studentEnrollments;
         this.id = id;
@@ -30,8 +28,8 @@ public class EnrollmentDetailsBySemester implements EnrollmentDetails {
 
     }
     @Override
-    public void printfl(String id) {
-        enrollmentDetailsBysemester(this.studentEnrollments,id).stream().forEach(e->e.printStudentEnrollment());
+    public void printfl() {
+        enrollmentDetailsBysemester(this.studentEnrollments,this.id).stream().forEach(e->e.printStudentEnrollment());
 
     }
 }

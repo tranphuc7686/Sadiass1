@@ -53,11 +53,11 @@ public class Student  {
 
     @Override
     public String toString() {
-        return "Student{" +
-                "id='" + sid + '\'' +
-                ", name='" + sname + '\'' +
-                ", birthdate=" + birthdate +
-                '}';
+        return "Student \n" +
+                "               ID : " + sid + '\n' +
+                "               Name : " + sname + '\n' +
+                "               Birthdate : " + birthdate ;
+
     }
 
     @Override

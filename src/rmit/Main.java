@@ -5,9 +5,15 @@ import rmit.BridgePattern.EnrollmentDetailsBySemester;
 import rmit.BridgePattern.EnrollmentDetailsByStudentId;
 import rmit.Controller.CourseBuilder;
 import rmit.Controller.StudentBuilder;
+import rmit.Decorator.Decorator;
+import rmit.Decorator.Message;
+import rmit.Decorator.NewMessage;
 import rmit.Model.Course;
 import rmit.Model.Student;
 import rmit.Facade.StudentEnrollment;
+import rmit.Proxy.Banner;
+import rmit.Proxy.ProxyBanner;
+import rmit.Singleton.MyTask;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +24,8 @@ import java.util.stream.Collectors;
 public class Main {
 
     public static void main(String[] args) {
+        Banner banner = new ProxyBanner();//Proxy
+        banner.show();//Proxy
         ArrayList<Student> arrayListStudent = new ArrayList<Student>();
         StudentBuilder studentBuilder = new StudentBuilder(); //Builder - add example
         Student student1 = studentBuilder.setsid("1").setsname("Tu Nguyen").setbirthdate("1997").studentbuild(); //Builder
@@ -37,9 +45,9 @@ public class Main {
         courseArrayList.add(course2);
         courseArrayList.add(course3);
         /*----*/
-//
-//         MenuSingleton menuSingleton = MenuSingleton.getInstance(); //singleton
-//        menuSingleton.begin();  // Singleton
+
+        MyTask menuSingleton = MyTask.getInstance(); //singleton
+        menuSingleton.run();  // Singleton
         ArrayList<StudentEnrollment> studentEnrollmentArrayList = new ArrayList<>();
 
         while (true) {
@@ -132,20 +140,22 @@ public class Main {
                     case 5: {
                         System.out.println("Please enter the id of student that you want to find: ");
                         String idStudent1 = String.valueOf(scanner.nextInt());
-                        new EnrollmentDetailsByStudentId(studentEnrollmentArrayList,idStudent1);
-
+                        EnrollmentDetails enrollmentDetailsByStudentId = new EnrollmentDetailsByStudentId(studentEnrollmentArrayList,idStudent1);
+                        enrollmentDetailsByStudentId.printfl();
                         break;
                     }
                     case 6: {
                         System.out.println("Please enter the semester of student that you want to find: ");
                         System.out.println("Enter the semester: 1.2018A |2.2018B |3.2018C");
                         String semester = randomId(scanner.nextInt());
-                        new EnrollmentDetailsBySemester(studentEnrollmentArrayList,semester);
+                        EnrollmentDetails enrollmentDetailsByStudentId =new EnrollmentDetailsBySemester(studentEnrollmentArrayList,semester);
+                        enrollmentDetailsByStudentId.printfl();
                         break;
                     }
                     case 7:
                         System.out.println("Good Bye");
-                        System.out.println("Have a nice day");
+                        Decorator newmessage = new NewMessage(new Message()); //Singleton
+                        newmessage.himessage("You !");
                         return;
                     default:
                         System.out.println("Invalid Input. Please try again");

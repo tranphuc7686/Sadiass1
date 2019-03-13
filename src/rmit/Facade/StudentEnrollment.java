@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import rmit.Controller.StudentEnrollmentManager;
 import rmit.Model.Course;
 import rmit.Model.Student;
-import rmit.Observer.Notifier;
 
 public class StudentEnrollment implements StudentEnrollmentManager {
     private String idErollment;
@@ -63,11 +62,10 @@ public class StudentEnrollment implements StudentEnrollmentManager {
 
     @Override
     public String toString() {
-        return "StudentEnrollment{" +
-                "idErollment='" + idErollment + '\'' +
-                ", mCourseList=" + mCourseList +
-                ", mStudentList=" + mStudentList +
-                ", semester='" + semester + '\'' +
-                '}';
+        return "StudentEnrollment : \n" +
+                "           ID Erollment: " + idErollment + '\n' +
+                "           Semester: " + semester + '\n' +
+                "           Courses: " + mCourseList +'\n' +
+                "           Students: " + mStudentList ;
     }
 }

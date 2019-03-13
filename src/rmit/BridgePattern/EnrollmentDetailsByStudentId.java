@@ -16,10 +16,7 @@ public class EnrollmentDetailsByStudentId implements EnrollmentDetails {
     String id;
 
 
-    public void settingDisplayStudent( EnrollmentDetails mEnrollmentDetails) {
-        mEnrollmentDetails.printfl(id);
-    }
-    private static List<StudentEnrollment> enrollmentDetails(ArrayList<StudentEnrollment> studentEnrollments, String idSinhVien) {
+      private static List<StudentEnrollment> enrollmentDetails(ArrayList<StudentEnrollment> studentEnrollments, String idSinhVien) {
         return studentEnrollments.stream()
                 .filter(enrollment -> {
                     return enrollment.getmStudentList().stream().anyMatch(e -> e.getSid().equals(idSinhVien));
@@ -28,7 +25,7 @@ public class EnrollmentDetailsByStudentId implements EnrollmentDetails {
     }
 
     @Override
-    public void printfl(String id) {
+    public void printfl() {
         enrollmentDetails(this.studentEnrollments,id).stream().forEach(e->e.printStudentEnrollment());
     }
 }
