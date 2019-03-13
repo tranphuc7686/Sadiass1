@@ -1,38 +1,55 @@
 package rmit.Model;
 
+import rmit.Observer.Notifier;
+
 import java.util.Objects;
 
 
 
-public class Student extends StudentEnrollment {
+public class Student  {
     private String sid;
     private String sname;
     private String birthdate;
+    private Notifier mNotifierList;
 
-    public Student(){}
-
-
-
-    public Student(String id, String name, String birthdate) {
-        this.sid = id;
-        this.sname = name;
+    public Student(String sid, String sname, String birthdate, Notifier mNotifierList) {
+        this.sid = sid;
+        this.sname = sname;
         this.birthdate = birthdate;
+        this.mNotifierList = mNotifierList;
     }
 
-    public String getsId() {
+    public String getSid() {
         return sid;
     }
 
-    public String getsName() {
+    public void setSid(String sid) {
+        this.sid = sid;
+    }
+
+    public String getSname() {
         return sname;
     }
 
+    public void setSname(String sname) {
+        this.sname = sname;
+    }
 
     public String getBirthdate() {
         return birthdate;
     }
 
+    public void setBirthdate(String birthdate) {
+        this.birthdate = birthdate;
+    }
 
+    public Notifier getmNotifierList() {
+        return mNotifierList;
+    }
+
+    public void setmNotifierList(Notifier mNotifierList) {
+        this.mNotifierList = mNotifierList;
+    }
 
     @Override
     public String toString() {
@@ -48,7 +65,7 @@ public class Student extends StudentEnrollment {
         if (this == o) return true;
         if (!(o instanceof Student)) return false;
         Student student = (Student) o;
-        return getBirthdate() == student.getBirthdate() &&
+        return getBirthdate().equals(student.getBirthdate()) &&
                 Objects.equals(sid, student.sid) &&
                 Objects.equals(sname, student.sname);
     }
@@ -58,6 +75,7 @@ public class Student extends StudentEnrollment {
 
         return Objects.hash(sid, sname, getBirthdate());
     }
+
 
 
 }

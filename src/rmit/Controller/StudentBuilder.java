@@ -1,11 +1,13 @@
 package rmit.Controller;
 
 import rmit.Model.Student;
+import rmit.Observer.Notifier;
 
 public class StudentBuilder {
     private String sid;
     private String sname;
-    private int birthdate;
+    private String birthdate;
+    private Notifier mNotifierList;
 
     public StudentBuilder setsid(String sid){
         this.sid = sid;
@@ -15,12 +17,12 @@ public class StudentBuilder {
         this.sname = sname;
         return this;
     }
-    public StudentBuilder setbirthdate(int birthdate){
+    public StudentBuilder setbirthdate(String birthdate){
         this.birthdate = birthdate;
         return this;
         }
     public Student studentbuild(){
-        return new Student(sid,sname,birthdate);
+        return new Student(sid,sname,birthdate,mNotifierList);
     }
 
 

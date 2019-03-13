@@ -2,7 +2,7 @@ package rmit.Model;
 
 import java.util.Objects;
 
-public class Course extends StudentEnrollment {
+public class Course  {
     private String cid;
     private String cname;
     private int numofcredits;

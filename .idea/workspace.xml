@@ -4,7 +4,32 @@
     <bookmark url="file://$PROJECT_DIR$/src/rmit/Visitor/Visitor.java" line="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4751f311-fc49-4f0f-b74c-0acbde3ad8d0" name="Default" comment="" />
+    <list default="true" id="4751f311-fc49-4f0f-b74c-0acbde3ad8d0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsBySemester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsByStudentId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmit/Decorator/Decorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmit/Decorator/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/rmit/Facade/StudentEnrollment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Builder/CourseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Builder/StudentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Course.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Singleton/MenuSingleton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/StudentEnrollment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/StudentEnrollmentManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Visitor/Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Sadiass1/rmit/Visitor/Visitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rmit/Controller/StudentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rmit/Controller/StudentBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rmit/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rmit/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rmit/Model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rmit/Model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rmit/Model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rmit/Model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rmit/Model/StudentEnrollment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rmit/Singleton/MenuSingleton.java" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/rmit/Main.java">
+      <file leaf-file-name="EnrollmentDetails.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetails.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,27 +52,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentEnrollment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rmit/Model/StudentEnrollment.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rmit/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="30" />
+            <state relative-caret-position="238">
+              <caret line="134" column="46" lean-forward="true" selection-start-line="134" selection-start-column="46" selection-end-line="134" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#318#319#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#451#452#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#602#603#0" expanded="true" />
-                <element signature="e#651#652#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#769#770#0" expanded="true" />
-                <element signature="e#805#806#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnrollmentDetailsBySemester.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsBySemester.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#401#402#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EnrollmentDetailsByStudentId.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsByStudentId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +104,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Arrat</find>
+      <find>scanner.nextLine();</find>
+      <find>The List Of Enrollment</find>
     </findStrings>
+    <replaceStrings>
+      <replace>String.valueOf(scanner.nextInt());</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,9 +127,6 @@
         <option value="$PROJECT_DIR$/src/rmit/Builder/StudentBuilder.java" />
         <option value="$PROJECT_DIR$/src/rmit/Builder/CourseBuilder.java" />
         <option value="$PROJECT_DIR$/src/rmit/Singleton/MenuSingleton.java" />
-        <option value="$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintStudents.java" />
-        <option value="$PROJECT_DIR$/src/rmit/Observer/Notifier.java" />
-        <option value="$PROJECT_DIR$/src/rmit/Adapter/PrintEmrollments.java" />
         <option value="$PROJECT_DIR$/src/rmit/Course.java" />
         <option value="$PROJECT_DIR$/src/rmit/Visitor/Visitor.java" />
         <option value="$PROJECT_DIR$/src/rmit/Student.java" />
@@ -91,13 +135,30 @@
         <option value="$PROJECT_DIR$/src/rmit/model/StudentBuilder.java" />
         <option value="$PROJECT_DIR$/src/rmit/model/StudentEnrollment.java" />
         <option value="$PROJECT_DIR$/src/rmit/model/Student.java" />
-        <option value="$PROJECT_DIR$/src/rmit/Controller/StudentBuilder.java" />
-        <option value="$PROJECT_DIR$/src/rmit/Model/Course.java" />
-        <option value="$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentManager.java" />
-        <option value="$PROJECT_DIR$/src/rmit/Model/Student.java" />
         <option value="$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentHelper.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Proxy/Banner.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Proxy/ActuaLBanner.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Proxy/ProxyBanner.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Decorator/Decorator.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Decorator/Decoratorr.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Decorator/Message.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintCourses.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintStudents.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Adapter/PrintEmrollments.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Decorator/NewMessage.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Adapter/PrintCourses.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Model/Course.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Observer/Notifier.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentManager.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Adapter/PrintStudents.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Controller/StudentBuilder.java" />
         <option value="$PROJECT_DIR$/src/rmit/Model/StudentEnrollment.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Facade/StudentEnrollment.java" />
+        <option value="$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetails.java" />
+        <option value="$PROJECT_DIR$/src/rmit/Model/Student.java" />
         <option value="$PROJECT_DIR$/src/rmit/Main.java" />
+        <option value="$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsBySemester.java" />
+        <option value="$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsByStudentId.java" />
       </list>
     </option>
   </component>
@@ -110,19 +171,17 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="816" />
-    <option name="height" value="576" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,6 +205,13 @@
               <item name="Sadiass1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="rmit" type="462c0819:PsiDirectoryNode" />
+              <item name="BridgePattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sadiass1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sadiass1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rmit" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,26 +223,67 @@
             </path>
             <path>
               <item name="Sadiass1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sadiass1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rmit" type="462c0819:PsiDirectoryNode" />
+              <item name="Observer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sadiass1" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="Sadiass1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Sadiass1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sadiass1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sadiass1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/SADI-A1" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Sadiass1\src\rmit" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="rmit.Decorator" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="rmit.Observer" />
     </key>
@@ -232,73 +339,77 @@
       <workItem from="1552242024860" duration="14099000" />
       <workItem from="1552258952022" duration="1456000" />
       <workItem from="1552260544863" duration="120000" />
+      <workItem from="1552451130340" duration="2267000" />
+      <workItem from="1552456152551" duration="1143000" />
+      <workItem from="1552457878373" duration="17319000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47440000" />
+    <option name="totallyTimeSpent" value="68169000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1873" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32946146" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50416666" side_tool="true" weight="0.32946146" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49583334" weight="0.32881" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25261998" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32985386" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50416666" side_tool="true" weight="0.32946146" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49583334" weight="0.7953795" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49583334" weight="0.7953795" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49583334" visible="true" weight="0.32946146" />
-      <window_info id="Image Layers" order="5" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50416666" side_tool="true" weight="0.32946146" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32946146" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32985386" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50416666" side_tool="true" weight="0.32946146" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,138 +420,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>studentEnrollment.getmStudentList().add(arrayListStudent.stream()                                 .filter(e-&gt;e.getSid().equals(idStudent))                                 .findFirst().get()                         )</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding>
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Singleton/EnrollmentSingleton.java" />
-    <entry file="file://$PROJECT_DIR$/src/rmit/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/StudentEnrollment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/Course.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/StudentEnrollment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/FactoryMethod/StudentCourseFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/rmit/FactoryMethod/StudentCourse.java" />
     <entry file="file://$PROJECT_DIR$/src/rmit/Model/Student.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -463,6 +455,8 @@
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#446#455#0" expanded="true" />
+            <element signature="e#1103#1111#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -471,13 +465,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/StudentEnrollment.java">
+    <entry file="file://$PROJECT_DIR$/src/rmit/Facade/StudentEnrollment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
@@ -487,16 +478,6 @@
             <element signature="e#352#353#0" expanded="true" />
             <element signature="e#406#407#0" expanded="true" />
             <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -527,16 +508,10 @@
     <entry file="file://$PROJECT_DIR$/src/rmit/Singleton/EnrollmentSingleton.java" />
     <entry file="file://$PROJECT_DIR$/src/rmit/Builder/StudentEnrollmentBuilder.java" />
     <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintCourse.java" />
-    <entry file="file://$PROJECT_DIR$/src/rmit/Observer/Notifier.java" />
     <entry file="file://$USER_HOME$/SADI-A1/COSC2440-A1-SADI-DoQuocToan-S3652979/src/jv/sadi/Student.java" />
     <entry file="file://$USER_HOME$/SADI-A1/COSC2440-A1-SADI-DoQuocToan-S3652979/src/jv/sadi/Courses.java" />
     <entry file="file://$USER_HOME$/SADI-A1/COSC2440-A1-SADI-DoQuocToan-S3652979/src/jv/sadi/StudentEnrollMent.java" />
     <entry file="file://$USER_HOME$/SADI-A1/COSC2440-A1-SADI-DoQuocToan-S3652979/src/jv/sadi/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/PrintStudents.java" />
-    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintStudents.java" />
-    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/PrintCourses.java" />
-    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintCourses.java" />
-    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/PrintEmrollments.java" />
     <entry file="file://$PROJECT_DIR$/src/rmit/Command/addenrollcommand.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/rmit/Visitor/Visitor.java">
@@ -549,88 +524,215 @@
     <entry file="file://$PROJECT_DIR$/Sadiass1.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/CourseBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentHelper.java" />
+    <entry file="file://$PROJECT_DIR$/src/rmit/Singleton/MenuSingleton.java" />
+    <entry file="file://$PROJECT_DIR$/src/rmit/Proxy/Banner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Proxy/ProxyBanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Proxy/ActuaLBanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Decorator/Decorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintCourses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/AdapterPrintStudents.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Singleton/MenuSingleton.java">
+    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/PrintCourses.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="272">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="16" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/StudentBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/PrintEmrollments.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        <state relative-caret-position="68">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/CourseBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="238">
+          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Decorator/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Decorator/NewMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/StudentEnrollmentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Controller/StudentBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rmit/Model/Course.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rmit/Model/StudentEnrollment.java">
+    <entry file="file://$PROJECT_DIR$/src/rmit/Adapter/PrintStudents.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="30" />
+        <state relative-caret-position="204">
+          <caret line="12" column="95" selection-start-line="12" selection-start-column="95" selection-end-line="12" selection-end-column="95" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#451#452#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#602#603#0" expanded="true" />
-            <element signature="e#651#652#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Decorator/Decorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Facade/StudentEnrollment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#882#883#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1028#1029#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Observer/Notifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/Model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsBySemester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rmit/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="89" column="35" lean-forward="true" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
+        <state relative-caret-position="238">
+          <caret line="134" column="46" lean-forward="true" selection-start-line="134" selection-start-column="46" selection-end-line="134" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rmit/BridgePattern/EnrollmentDetailsByStudentId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
           </folding>
         </state>
       </provider>

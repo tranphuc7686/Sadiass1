@@ -1,39 +1,42 @@
 package rmit;
 
-import rmit.Model.Course;
-import rmit.Singleton.MenuSingleton;
-import rmit.Model.Student;
-import rmit.Controller.StudentBuilder;
+import rmit.BridgePattern.EnrollmentDetails;
+import rmit.BridgePattern.EnrollmentDetailsBySemester;
+import rmit.BridgePattern.EnrollmentDetailsByStudentId;
 import rmit.Controller.CourseBuilder;
-import rmit.Model.StudentEnrollment;
+import rmit.Controller.StudentBuilder;
+import rmit.Model.Course;
+import rmit.Model.Student;
+import rmit.Facade.StudentEnrollment;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
-import java.util.UUID;
+import java.util.stream.Collectors;
 
 public class Main {
 
     public static void main(String[] args) {
-//        ArrayList<Student> arrayListStudent = new ArrayList<Student>();
-//        StudentBuilder studentBuilder = new StudentBuilder(); //Builder - add example
-//        Student student1 = studentBuilder.setsid("1").setsname("Tu Nguyen").setbirthdate(1997).studentbuild(); //Builder
-//        Student student2 = studentBuilder.setsid("2").setsname("Lan Tran").setbirthdate(1997).studentbuild(); //Builder
-//        Student student3 = studentBuilder.setsid("3").setsname("Le Van Dung").setbirthdate(1996).studentbuild(); //Builder
-//        arrayListStudent.add(student1);
-//        arrayListStudent.add(student2);
-//        arrayListStudent.add(student3);
-//        /*---*/
-//
-//        ArrayList<Course> courseArrayList = new ArrayList<Course>();
-//        CourseBuilder courseBuilder = new CourseBuilder(); //Builder - add example
-//        Course course1 = courseBuilder.setcid("1").setcname("Programming1").setnumofcredit(12).coursebuild();
-//        Course course2 = courseBuilder.setcid("2").setcname("SADI").setnumofcredit(12).coursebuild();
-//        Course course3 = courseBuilder.setcid("3").setcname("Web Programming").setnumofcredit(12).coursebuild();
-//        courseArrayList.add(course1);
-//        courseArrayList.add(course2);
-//        courseArrayList.add(course3);
-//        /*----*/
+        ArrayList<Student> arrayListStudent = new ArrayList<Student>();
+        StudentBuilder studentBuilder = new StudentBuilder(); //Builder - add example
+        Student student1 = studentBuilder.setsid("1").setsname("Tu Nguyen").setbirthdate("1997").studentbuild(); //Builder
+        Student student2 = studentBuilder.setsid("2").setsname("Lan Tran").setbirthdate("1997").studentbuild(); //Builder
+        Student student3 = studentBuilder.setsid("3").setsname("Le Van Dung").setbirthdate("1997").studentbuild(); //Builder
+        arrayListStudent.add(student1);
+        arrayListStudent.add(student2);
+        arrayListStudent.add(student3);
+        /*---*/
+
+        ArrayList<Course> courseArrayList = new ArrayList<Course>();
+        CourseBuilder courseBuilder = new CourseBuilder(); //Builder - add example
+        Course course1 = courseBuilder.setcid("1").setcname("Programming1").setnumofcredit(12).coursebuild();
+        Course course2 = courseBuilder.setcid("2").setcname("SADI").setnumofcredit(12).coursebuild();
+        Course course3 = courseBuilder.setcid("3").setcname("Web Programming").setnumofcredit(12).coursebuild();
+        courseArrayList.add(course1);
+        courseArrayList.add(course2);
+        courseArrayList.add(course3);
+        /*----*/
 //
 //         MenuSingleton menuSingleton = MenuSingleton.getInstance(); //singleton
 //        menuSingleton.begin();  // Singleton
@@ -41,7 +44,7 @@ public class Main {
 
         while (true) {
             String[] general_array = {"--------------------------------","|     Enrollment Menu          |", "--------------------------------", "Please enter your choice (1 - 5)",
-                    "1 - Add new enrollment", "2 - Update enrollment","3 - Delete enrollment", "4 - View the list", "5 - Exit"};  //Menu
+                    "1 - Add new enrollment", "2 - Update enrollment", "3 - Delete enrollment", "4 - View the list", "5 - Print enrollment details for each student", "6 - Print enrollment for all students for 1 semester. ", "7 - Exit"};  //Menu
             for (String aGeneral_array : general_array) {
                 System.out.println(aGeneral_array);
             }
@@ -50,58 +53,97 @@ public class Main {
                 Scanner scanner = new Scanner(System.in);
                 choice = scanner.nextInt();
                 switch (choice) {
-                    case 1:
+                    case 1: {
+                        StudentEnrollment studentEnrollment = new StudentEnrollment();
+                        System.out.println("Please enter the id of student that you want to enroll: ");
+                        String idStudent = String.valueOf(scanner.nextInt());
 
-                        System.out.println("Please enter the Student");
-                        System.out.println("Please enter the Name of Student");
-                        String name = scanner.nextLine();
-                        System.out.println("Please enter the Birthdate of Student");
-                        String birthDate = scanner.nextLine();
-                        /*---*/
-                        System.out.println("Please enter the Course");
-                        System.out.println("Please enter the Name of Course");
-                        String cname = scanner.nextLine();
-                        System.out.println("Please enter the Birthdate of Student");
-                        int numofcredits = scanner.nextInt();
-                        studentEnrollmentArrayList.add(new StudentEnrollment(new Course(UUID.randomUUID().toString(),cname,numofcredits),
-                                new Student(UUID.randomUUID().toString(),name,birthDate),
-                                UUID.randomUUID().toString()
-                        ));
+                        System.out.println("Please enter the id of Course that you want to enroll: ");
+                        String idCourse = String.valueOf(scanner.nextInt());
+                        System.out.println("Enter the semester: 1.2018A |2.2018B |3.2018C");
+                        String semester = randomId(scanner.nextInt());
+                        studentEnrollment.getmStudentList().add(arrayListStudent.stream()
+                                .filter(e -> e.getSid().equals(idStudent))
+                                .findFirst().get()
+                        );
+                        studentEnrollment.getmCourseList().add(courseArrayList.stream()
+                                .filter(e -> e.getcid().equals(idCourse))
+                                .findFirst().get()
+                        );
+                        studentEnrollment.setIdErollment(randomId(studentEnrollmentArrayList) + "");
+                        studentEnrollment.setSemester(semester);
+
+                        studentEnrollmentArrayList.add(studentEnrollment);
+                        studentEnrollmentArrayList.stream().forEach(e -> {
+                            e.printStudentEnrollment();
+                        });
+                        System.out.println("Done !");
                         break;
+                    }
                     case 2:
                     {
-                        studentEnrollmentArrayList.forEach(e -> e.printStudentEnrollment(e));
                         System.out.println("Please enter the id of enrollment that you want to update");
-                        String id  = scanner.nextLine();
+                        String idEnrollment = String.valueOf(scanner.nextInt());
+                        StudentEnrollment studentEnrollment1 = studentEnrollmentArrayList
+                                .stream()
+                                .filter(e -> e.getIdErollment().equals(idEnrollment))
+                                .findFirst().get();
+                        System.out.println("Please enter the id of student that you want to enroll: ");
+                        String idStudent1 = String.valueOf(scanner.nextInt());
+                        System.out.println("Please enter the id of Course that you want to enroll: ");
+                        String idCourse1 = String.valueOf(scanner.nextInt());
+                        studentEnrollment1.getmStudentList().add(arrayListStudent.stream()
+                                .filter(e -> e.getSid().equals(idStudent1))
+                                .findFirst().get()
+                        );
+                        studentEnrollment1.getmCourseList().add(courseArrayList.stream()
+                                .filter(e -> e.getcid().equals(idCourse1))
+                                .findFirst().get()
+                        );
+                        System.out.println("Done !");
 
-                        System.out.println("Please enter the Student");
-                        System.out.println("Please enter the Name of Student");
-                        String name1 = scanner.nextLine();
-                        System.out.println("Please enter the Birthdate of Student");
-                        String birthDate1 = scanner.nextLine();
-                        /*---*/
-                        System.out.println("Please enter the Course");
-                        System.out.println("Please enter the Name of Course");
-                        String cname1 = scanner.nextLine();
-                        System.out.println("Please enter the Birthdate of Student");
-                        int numofcredits1 = scanner.nextInt();
 
-                        StudentEnrollment mStudentEnrollment =  studentEnrollmentArrayList.stream().filter(e -> e.getIdErollment().equals(id)).findFirst().get();
-                        mStudentEnrollment.setmStudent(new Student(mStudentEnrollment.getmStudent().getsId(),name1,birthDate1));
-                        mStudentEnrollment.setmCourse(new Course(mStudentEnrollment.getmCourse().getcid(),cname1,numofcredits1));
                         break;
                     }
 
                     case 3:
                         System.out.println("Please enter the id of enrollment that you want to delete");
+                        String idEnrollment = String.valueOf(scanner.nextInt());
+                        StudentEnrollment studentEnrollment1 = studentEnrollmentArrayList
+                                .stream()
+                                .filter(e -> e.getIdErollment().equals(idEnrollment))
+                                .findFirst().get();
+                        studentEnrollmentArrayList.remove(studentEnrollment1);
+                        System.out.println("Done !");
+
                         break;
                     case 4:
-                        System.out.println("The List Of Enrollment");
-                        StudentEnrollment studentEnrollment1 = new StudentEnrollment();
-                        List<Student> studentList1 = studentEnrollment1.getStudentList();
-                        System.out.println(studentList1);
+
+                        if (studentEnrollmentArrayList.size() > 1 || studentEnrollmentArrayList.size() == 1) {
+                            System.out.println("The List Of Enrollment");
+                            studentEnrollmentArrayList.stream().forEach(e -> {
+                                e.printStudentEnrollment();
+                            });
+                        } else {
+                            System.out.println("The List Of Enrollment is empty !!");
+                        }
+
                         break;
-                    case 5:
+                    case 5: {
+                        System.out.println("Please enter the id of student that you want to find: ");
+                        String idStudent1 = String.valueOf(scanner.nextInt());
+                        new EnrollmentDetailsByStudentId(studentEnrollmentArrayList,idStudent1);
+
+                        break;
+                    }
+                    case 6: {
+                        System.out.println("Please enter the semester of student that you want to find: ");
+                        System.out.println("Enter the semester: 1.2018A |2.2018B |3.2018C");
+                        String semester = randomId(scanner.nextInt());
+                        new EnrollmentDetailsBySemester(studentEnrollmentArrayList,semester);
+                        break;
+                    }
+                    case 7:
                         System.out.println("Good Bye");
                         System.out.println("Have a nice day");
                         return;
@@ -110,6 +152,7 @@ public class Main {
                 }
             }
             catch(Exception ex){
+                ex.printStackTrace();
                 System.out.println("Invalid Input. Please try again");
             }
         }
@@ -119,6 +162,38 @@ public class Main {
 
 
 
+
+    }
+
+    private static int randomId(ArrayList<StudentEnrollment> studentEnrollments) {
+        while (true) {
+            Random ran = new Random();
+            int x = ran.nextInt(6) + 5;
+            if (!studentEnrollments
+                    .stream()
+                    .filter(e -> e.getIdErollment().equals(x + ""))
+                    .findFirst().isPresent()) {
+                return x;
+
+            }
+        }
+    }
+
+
+
+
+
+    private static String randomId(int index) {
+        switch (index) {
+            case 1:
+                return "2018A";
+            case 2:
+                return "2018B";
+            case 3:
+                return "2018C";
+
+        }
+        return "Invalid Input. Please try again";
 
     }
 }
