@@ -3,6 +3,8 @@ package rmit;
 import rmit.BridgePattern.EnrollmentDetails;
 import rmit.BridgePattern.EnrollmentDetailsBySemester;
 import rmit.BridgePattern.EnrollmentDetailsByStudentId;
+
+import rmit.Command.*;
 import rmit.Controller.CourseBuilder;
 import rmit.Controller.StudentBuilder;
 import rmit.Decorator.Decorator;
@@ -157,6 +159,19 @@ public class Main {
                         break;
                     }
                     case 7:
+                        /*Command patten*/
+                        RemoteControl control = new RemoteControl();
+                        Mess mess = new Mess();
+                        Command bye = new LightOnCommand(mess);
+                        Command comback = new LightOffCommand(mess);
+                        //say bye
+                        control.setCommand(bye);
+                        control.pressButton();
+                        //say come back
+                        control.setCommand(comback);
+                        control.pressButton();
+
+
                         System.out.println("Good Bye");
                         Decorator newmessage = new NewMessage(new Message()); //Singleton
                         newmessage.himessage("You !");
